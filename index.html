@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <!-- body frame of calculator -->
+    <main id="main-container">
+        <!-- parent div container -->
+        <div id="div-container">
+            <!-- CALCULATOR -->
+            <div id="calc">
+                <p>CALCULATOR</p>
+            </div>
+            <!-- the calculation display -->
+            <div id="display-section">
+                <div id="child-dsp-sec">
+                    <p id="answer"></p>
+                </div>
+            </div>
+            <!-- display section of numbers -->
+            <div id="numbers">
+                <!-- 1st section of divs -->
+                <div class="button" data-value="ac" title="Clears Screen">
+                    <h2>AC</h2>
+                </div>
+                <div class="button" data-value="zz" title="Adds Pre-Subract Sign">
+                    <h2>+/-</h2>
+                </div>
+                <div class="button" data-value="%">
+                    <h2>%</h2>
+                </div>
+                
+                <div class="button btn2" data-value="/">
+                    <h2>/</h2>
+                </div>
+                <!-- second section of divs -->
+                <div class="button" data-value="7">
+                    <h2>7</h2>
+                </div>
+                <div class="button" data-value="8">
+                    <h2>8</h2>
+                </div>
+                <div class="button" data-value="9">
+                    <h2>9</h2>
+                </div>
+                <div class="button btn2" data-value="*">
+                    <h2>*</h2>
+                </div>
+                <!-- third section of divs -->
+                <div class="button" data-value="6" >
+                    <h2>6</h2>
+                </div>
+                <div class="button" data-value="5">
+                    <h2>5</h2>
+                </div>
+                <div class="button" data-value="4">
+                    <h2>4</h2>
+                </div>
+                <div class="button btn2" data-value="-">
+                    <h2>-</h2>
+                </div>
+                <!-- 4th section of divs -->
+                <div class="button" data-value="3">
+                    <h2>3</h2>
+                </div>
+                <div class="button" data-value="2">
+                    <h2>2</h2>
+                </div>
+                <div class="button" data-value="1">
+                    <h2>1</h2>
+                </div>
+                <div class="button btn2" data-value="+">
+                    <h2>+</h2>
+                </div>
+                <!-- third section of divs -->
+                <div class="button" data-value="0">
+                    <h2>0</h2>
+                </div>
+                <div class="button" data-value=".">
+                    <h2>.</h2>
+                </div>
+                <div class="button btn-clr" data-value="clr" title="Back-Space">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="button btn2" data-value="=">
+                    <h2>=</h2>
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+    <script src='script.js'></script>
+</body>
+
+</html>

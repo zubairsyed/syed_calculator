@@ -1,0 +1,156 @@
+body{
+    background-color: rgb(224, 118, 224);
+    margin:0;
+    color:black;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(17, 38, 78, 0.877);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#div-container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    height: max-content;
+    border: 2px solid rgb(255, 250, 250);
+    box-sizing: border-box;
+}
+
+#calc{
+    background-color: blue;
+    text-align: center;
+    height: 3vw;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    animation: cal_blink ease-in-out infinite 1s;
+}
+
+@keyframes cal_blink{
+    0%{
+        font-size:2.2rem;
+        /* transform: scale(1.1); */
+        color: white;
+    }
+    50%{
+        font-size:2rem;
+        /* transform: scale(1) */
+        color: rgb(161, 252, 14);
+    }
+    100%{
+        font-size:2.2rem;
+        /* transform: scale(1.1); */
+        color: rgb(5, 10, 1);
+    }
+}
+
+
+div#display-section{
+    position: relative;
+    height: 8.5vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-align: center;
+}
+
+#child-dsp-sec{
+    position: absolute;
+    top: 0.2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 8vw;
+    width: 98%;
+    color: white;
+    box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+    text-align: right;
+    background-color: rgb(3, 1, 107);
+}
+
+.fa-arrow-left{
+    font-size: 1.4rem;
+    color: rgb(90, 18, 18);
+}
+
+div#display-section p{
+    position: relative;
+    right: 0.2rem;
+    bottom: 2px;
+    padding-left: 5px;
+    font-size: 2rem;
+}
+
+
+div#numbers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    height: 27.25vw;
+    width: 100%;
+    justify-content: space-between;
+    background-color: cyan;
+    /* box-sizing: border-box; */
+}
+
+
+div#numbers div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    height: 5.3vw;
+    width: 6vw;
+    z-index:1;
+    border-bottom: 0.1px solid white;
+    background-color: rgb(151, 151, 253);
+    /* border: 0.3px solid black; */
+    transition: all ease-in-out 0.35s;
+}
+
+div#numbers div:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 27, 27);
+    transform: scale(0.9);
+    box-shadow: 0px 0px 5px rgb(214, 180, 29);
+}
+
+div.btn2{
+    color: white;
+    background-color: green !important;
+}
+
+div.btn-clr{
+    background-color: red !important;
+}
+
+.btn2:hover{
+    background-color: rgb(211, 113, 1) !important;
+    color: black !important;
+}
+
+.btn-clr:hover{
+    background-color: rgb(100, 88, 255) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
